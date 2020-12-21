@@ -167,6 +167,7 @@ function saveall()
 }
 
 /* PUBLIC ROP API
+
 This function is used to execute ROP chains. `buf` is an address of the start of the ROP chain.
 * first 8 bytes of `buf` should be allocated but not used -- they are used internally.
 * the actual ROP chain starts at `buf+8`
