@@ -4,6 +4,11 @@
 		if(document.cookie.indexOf('kex=0') >= 0)
 			document.location.href = '../index.html';
 		</script>
+		<script src="utils.js"></script>
+		<script src="int64.js"></script>
+		<script src="rop.js"></script>
+		<script src="userland.js"></script>
+		<script src="ps4.js"></script>
 		<script>
 			function print(){}
 
@@ -34,10 +39,12 @@
 			window.midExploit = function()
 			{
 				preloadScripts(['../702.js', '../jb.js', '../mira.js', '../c-code.js'], go);
+				
 			}
 
 			window.postExploit = function()
 			{
+				alert("جاهزين لاستقبال البايلود \n اضغط اوك وارسل البايلود على بورت 2021");
 				document.cookie = 'kex=0';
 				setTimeout(function() //update the screen one last time...
 				{
@@ -46,11 +53,6 @@
 				}, 100);
 			};
 		</script>
-		<script src="utils.js"></script>
-		<script src="int64.js"></script>
-		<script src="rop.js"></script>
-		<script src="userland.js"></script>
-		<script src="ps4.js"></script>
 		<button id="input1" onfocus="handle2()"></button>
 		<button id="input2"></button>
 		<button id="input3" onfocus="handle2()"></button>
