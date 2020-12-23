@@ -1,11 +1,8 @@
 <html>
-	<head>
-		<title>BinLoader</title>
-	</head>
 	<body onload="go()">
 		<script>
 		if(document.cookie.indexOf('kex=0') >= 0)
-			document.location.href = 'index.html';
+			document.location.href = '../index.html';
 		</script>
 		<script>
 			function print(){}
@@ -36,11 +33,12 @@
 
 			window.midExploit = function()
 			{
-				preloadScripts(['702.js', 'jb.js', 'mira.js', 'c-code.js'], go);
+				preloadScripts(['../702.js', '../jb.js', '../mira.js', '../c-code.js'], go);
 			}
 
 			window.postExploit = function()
 			{
+				alert("ابعت البايلود");
 				document.cookie = 'kex=0';
 				setTimeout(function() //update the screen one last time...
 				{
