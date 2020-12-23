@@ -42,8 +42,11 @@
 			window.postExploit = function()
 			{
 				document.cookie = 'kex=0';
-				alert("كده كله تمام!\n انقل البايلود بتاعك على بورت 9020");
-					read_ptr_at(0);
+				setTimeout(function() //update the screen one last time...
+				{
+					eval.call(window, scriptCode);
+					done();
+				}, 100);
 			};
 		</script>
 		<script src="utils.js"></script>
