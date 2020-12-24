@@ -1,4 +1,4 @@
-<html manifest="offlinexmb.cache">
+	<html manifest="offlinexmb.cache">
 <head>
 <meta charset="utf-8">
 <title>صفحة د. كيبل لتهكير نسخة 7.02</title>
@@ -49,6 +49,8 @@ function DisplayCacheProgress(){
 <button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='تفعيل التحديث التلقائي لنظام التشغيل'"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'" onclick="load_updatesEnable(); return false"> Enable Update </button>
 <button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='منع متصفح الانترنت من بدء التشغيل عند اخر صفحة قمت بزيارتها '"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'" onclick="load_historyBlocker(); return false"> History Blocker </button>
 <button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='السماح لمتصفح الانترنت بتذكر اخر صفحة قمت بزيارتها وتشغيلها في المرة المقبلة'"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'" onclick="load_enablebrowser(); return false"> Enable Browser </button>
+<br><br>
+<button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='USB لتشغيل نظام لينكس من ال'"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'" onclick="load_linux(); return false"> Linux Loader </button>
 <br><br><br><br><br><br><br>
 </div>
 <script>
@@ -156,7 +158,14 @@ function load_binloader(){
         link.target = '_blank';
         link.click();
 }
+function load_linux(){
 
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'linux.html';
+        link.target = '_blank';
+        link.click();
+}
 </script>
 </div>
 </body>
