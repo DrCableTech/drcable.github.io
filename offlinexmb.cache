@@ -38,8 +38,5 @@ todex.html
 todex.js
 utils.js
 BinLoader\index.html
-BinLoader\int64.js
-BinLoader\ps4.js
 BinLoader\rop.js
 BinLoader\userland.js
-BinLoader\utils.js
