@@ -52,6 +52,7 @@ function DisplayCacheProgress(){
 <br><br>
 <button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='USB لتشغيل نظام لينكس من ال'"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'" onclick="load_linux(); return false"> Linux Loader </button>
 <button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='PS4 Cheater و PS4OfflineAccountActivator تفعيل قراءة بيانات الرام لاستخدامها مع برامج معينه مثل '"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'" onclick="load_ps4debug(); return false"> PS4 Debug </button>
+<button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='على نسخة 7.02 PSVR لتشغيل '"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'" onclick="load_psvr(); return false"> PSVR </button>
 <br><br><br><br><br><br><br>
 </div>
 <script>
@@ -172,6 +173,14 @@ function load_ps4debug(){
   var link = document.createElement('a');
         document.body.appendChild(link);
         link.href = 'PS4debug/index.html';
+        link.target = '_blank';
+        link.click();
+}
+function load_psvr(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'psvr.html';
         link.target = '_blank';
         link.click();
 }
