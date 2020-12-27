@@ -44,3 +44,6 @@ PS4debug\index.html
 PS4debug\payload.js
 PS4debug\rop.js
 PS4debug\userland.js
+PS4debug\int64.js
+PS4debug\ps4.js
+PS4debug\utils.js
