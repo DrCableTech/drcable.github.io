@@ -51,6 +51,7 @@ function DisplayCacheProgress(){
 <button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='السماح لمتصفح الانترنت بتذكر اخر صفحة قمت بزيارتها وتشغيلها في المرة المقبلة'"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'" onclick="load_enablebrowser(); return false"> Enable Browser </button>
 <br><br>
 <button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='USB لتشغيل نظام لينكس من ال'"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'" onclick="load_linux(); return false"> Linux Loader </button>
+<button href="index.html#" style='font-size:20px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='PS4 Cheater و PS4OfflineAccountActivator تقوم هذه الاضافة بتفعيل قراءة بيانات الرام لاستخدامها مع برامج معينه مثل '"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'" onclick="load_ps4debug(); return false"> PS4 Debug </button>
 <br><br><br><br><br><br><br>
 </div>
 <script>
@@ -163,6 +164,14 @@ function load_linux(){
   var link = document.createElement('a');
         document.body.appendChild(link);
         link.href = 'linux.html';
+        link.target = '_blank';
+        link.click();
+}
+function load_ps4debug(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'PS4debug/index.html';
         link.target = '_blank';
         link.click();
 }
