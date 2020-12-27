@@ -40,3 +40,7 @@ utils.js
 BinLoader\index.html
 BinLoader\rop.js
 BinLoader\userland.js
+PS4debug\index.html
+PS4debug\payload.js
+PS4debug\rop.js
+PS4debug\userland.js
