@@ -290,7 +290,7 @@ function stage2() {
       new_thr.fcall(libKernelBase.add32(OFFSET_lk_pthread_exit), 0);
     });
     loader_thr();
-    alert("waiting for payload");
+    alert("جاهزين لاستقبال البايلود \n ارسل البايلود على بورت 9020 \n وبعد الانتهاء اضغط اوك واقفل الصفحة \n مع تحيات د. كيبل");
   
 }
 
