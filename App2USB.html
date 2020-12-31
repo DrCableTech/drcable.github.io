@@ -1,4 +1,7 @@
 <html>
+	<head>
+		<script src="DrCable.js"></script>
+	</head>
 <body onload="go()">
 <script>
 if(document.cookie.indexOf('kex=0') >= 0)
@@ -24,11 +27,11 @@ function done()
 {
     if(main_ret == 0 || main_ret == 179)
     {
-        alert("كده كله تمام!\n اقفل الصفحة واقفل المتصفح \n مع تحيات د. كيبل");
+        alert("\u0643\u062F\u0647 \u0643\u0644\u0647 \u062A\u0645\u0627\u0645!\n \u0627\u0642\u0641\u0644 \u0627\u0644\u0635\u0641\u062D\u0629 \u0648\u0627\u0642\u0641\u0644 \u0627\u0644\u0645\u062A\u0635\u0641\u062D \n \u0645\u0639 \u062A\u062D\u064A\u0627\u062A \u062F. \u0643\u064A\u0628\u0644");
         read_ptr_at(0);
     }
     else
-        alert("للاسف حصلت مشكلة \n برجاء اعادة تشغيل الجهاز والمحاولة مرة أخرى.");
+        alert("\u0644\u0644\u0627\u0633\u0641 \u062D\u0635\u0644\u062A \u0645\u0634\u0643\u0644\u0629 \n \u0628\u0631\u062C\u0627\u0621 \u0627\u0639\u0627\u062F\u0629 \u062A\u0634\u063A\u064A\u0644 \u0627\u0644\u062C\u0647\u0627\u0632 \u0648\u0627\u0644\u0645\u062D\u0627\u0648\u0644\u0629 \u0645\u0631\u0629 \u0623\u062E\u0631\u0649.");
 }
 
 window.midExploit = function()
@@ -46,9 +49,6 @@ window.postExploit = function()
     }, 100);
 };
 </script>
-<script src="utils.js"></script>
-<script src="int64.js"></script>
-<script src="ps4.js"></script>
 <button id="input1" onfocus="handle2()"></button>
 <button id="input2"></button>
 <button id="input3" onfocus="handle2()"></button>
