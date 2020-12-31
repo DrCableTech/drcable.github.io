@@ -1,15 +1,20 @@
 CACHE MANIFEST 
 # v2.5.5 Self-Host 
 
-DRC.jpg
+30391.html
+30391.js
 702.js
 App2USB.html
 App2USB.js
 Backup.html
 Backup.js
+Binloader.html
+BinLoader.js
 c-code.js
 Disable-Updates.html
 Disable-Updates.js
+DRC.jpg
+DrCable.js
 Dumper.html
 Dumper.js
 Enable-Browser.html
@@ -19,6 +24,7 @@ Enable-Updates.js
 FTP.html
 FTP.js
 HEN.html
+HEN.js
 History-Blocker.html
 History-Blocker.js
 index.html
@@ -30,21 +36,17 @@ linux.html
 linux.js
 MIRA.html
 mira.js
-miraVR.js
-ps4-hen-vtx-702.js
+mira_pl.js
 ps4.js
+PS4debug.html
+PS4debug_pl.js
+PS4debug_ul.js
 PSVR.html
 PSVR.js
 Restore.html
 Restore.js
+rop.js
 Style.css
 todex.html
 todex.js
 utils.js
-BinLoader\index.html
-BinLoader\rop.js
-BinLoader\userland.js
-PS4debug\index.html
-PS4debug\payload.js
-PS4debug\rop.js
-PS4debug\userland.js
