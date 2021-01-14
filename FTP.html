@@ -1,5 +1,6 @@
 <html>
 	<head>
+		<link rel="stylesheet prefetch" href="pages.css">
 		<script src="DrCable.js"></script>
 	</head>
 <body onload="go()">
@@ -46,14 +47,14 @@ window.postExploit = function()
     {
         eval.call(window, scriptCode);
         done();
-    }, 100);
+    }, 1000);
 };
 </script>
-<button id="input1" onfocus="handle2()"></button>
-<button id="input2"></button>
-<button id="input3" onfocus="handle2()"></button>
-<select id="select1">
-<option value="value1"> Youtube: DrCable </option>
-</select>
+		<button id="input1" onfocus="handle2()"></button>
+		<button id="input2"></button>
+		<select id="select1">
+			<option value="value1"> Youtube: DrCable </option>
+		</select>
+		<button id="input3" onfocus="handle2()"></button>
 </body>
 </html>

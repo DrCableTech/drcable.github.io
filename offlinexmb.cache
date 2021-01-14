@@ -1,4 +1,4 @@
-CACHE MANIFEST 
+		00CACHE MANIFEST 
 # v2.5.5 Self-Host 
 
 30391.html
@@ -9,7 +9,7 @@ App2USB.js
 Backup.html
 Backup.js
 Binloader.html
-Binloader.js
+BinLoader.js
 c-code.js
 Disable-Updates.html
 Disable-Updates.js
@@ -37,6 +37,7 @@ linux.js
 MIRA.html
 mira.js
 mira_pl.js
+pages.css
 ps4.js
 PS4debug.html
 PS4debug_pl.js
@@ -50,3 +51,6 @@ Style.css
 todex.html
 todex.js
 utils.js
+webrte.html
+webrte_ul.js
+webrte_pl.js
