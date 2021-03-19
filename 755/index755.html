@@ -26,13 +26,15 @@ function DisplayCacheProgress(){
 <div style="background-image: url('../DRC.jpg'); background-size:cover ; height:100%;">
 <div id=ScrOverlay class=cacheUPDbg><pre id=cacheUPDtxt class=cacheUPD></pre>
 <div id=CacheProgress><div id=CacheBar></div></div></div>
-<hr><br></span><h1 style='font-size:30px;text-align:center;color:white;'>أهلا بك في صفحة د. كيبل لتهكير نسخة 7.55</h1><br>
+<hr><br><h1 style='font-size:30px;text-align:center;color:white;'>أهلا بك في صفحة د. كيبل لتهكير نسخة 7.55</h1><br>
 <hr>
 <a href="https://streamlabs.com/drcable/tip" id="donate" onMouseOver="wsf.innerHTML='شكرا لك على دعمك لنا'"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'"  style='font-size:25px;text-shadow: 4px 4px 4px black;text-align:center;color:#7CFD96;'>الدعم المادي</a><a href="https://www.youtube.com/c/DrCable" target="_blank" id="donate2" style='font-size:25px;text-shadow: 4px 4px 4px black;text-align:center;color:#7CFD96;'>تابعنا عاليوتيوب</a><h1 id=wsf style='font-size:25px;text-align:center;color:#ffff01;'>عايز تعمل ايه ؟</h1>
 <hr>
 <div style="text-align:center"  id="MyItems">
 <br><br>
-<button href="index755.html#" style='font-size:25px;font-family:Cairo,sans-serif;width:180px;height:60px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='VR يجب استخدامه لتشغيل جهاز ال'"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'" onclick="load_Mira(); return false"><b>تفعيل ميرا </button>
+<button href="index755.html#" style='font-size:25px;font-family:Cairo,sans-serif;width:180px;height:60px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='VR يجب استخدامه لتشغيل جهاز ال'"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'" onclick="load_Mira750(); return false"><b>MIRA 7.50</button>
+<button href="index755.html#" style='font-size:25px;font-family:Cairo,sans-serif;width:180px;height:60px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='VR يجب استخدامه لتشغيل جهاز ال'"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'" onclick="load_Mira751(); return false"><b>MIRA 7.51</button>
+<button href="index755.html#" style='font-size:25px;font-family:Cairo,sans-serif;width:180px;height:60px;text-align:center;color:#4863A0' class="pointer" onMouseOver="wsf.innerHTML='VR يجب استخدامه لتشغيل جهاز ال'"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'" onclick="load_Mira755(); return false"><b>MIRA 7.55</button>
 <button href="index755.html#" style='font-size:25px;font-family:Cairo,sans-serif;width:180px;height:60px;text-align:center;color:#4863A0;display:none' class="pointer" onMouseOver="wsf.innerHTML='Debug Settings وتفعيل ال HEN تشغيل ال'"; onmouseout="wsf.innerHTML='عايز تعمل ايه ؟'" onclick="load_hen(); return false"><b>تفعيل التهكير</button>
 <br>
 <h1 style='font-size:48px;text-align:center;text-shadow: 4px 4px 4px black;color:#7CFD96'>الاضافات</h1>
@@ -67,11 +69,28 @@ function load_hen(){
         link.href = 'HEN.html';
         link.click();
 }
-function load_Mira(){
+
+function load_Mira750(){
 
   var link = document.createElement('a');
         document.body.appendChild(link);
-        link.href = 'payload755.html#f=mira_pl.js';
+        link.href = 'mira750.html';
+        link.click();
+}
+
+function load_Mira751(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'mira751.html';
+        link.click();
+}
+
+function load_Mira755(){
+
+  var link = document.createElement('a');
+        document.body.appendChild(link);
+        link.href = 'payload755.html#f=mira755_pl.js';
         link.click();
 }
 function load_app2usb(){
