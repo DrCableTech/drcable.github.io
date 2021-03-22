@@ -1,4 +1,4 @@
-CACHE MANIFEST 
+sCACHE MANIFEST 
 # v2.5.5 Self-Host 
 
 30391.js
@@ -36,6 +36,7 @@ PS4debug_ul.js
 PSVR.js
 Restore.js
 rop.js
+spoof.js
 Style.css
 todex.js
 utils.js
