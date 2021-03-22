@@ -10,26 +10,25 @@ CACHE MANIFEST
  Dumper.js
  Enable-Browser.js
  Enable-Updates.js
+ fancontrol.js
  FTP.html
  FTP.js
+ goldhen.js
  History-Blocker.js
  index755.html
  int64.js
  jb755.js
  Kernel-Clock.js
- mira750.html
- mira750.js
- mira751.html
- mira751.js
  mira755.js
  mira755_pl.js
- miraloader750.js
- miraloader751.js
+ mira-beta.js
  payload755.html
  ps4.js
+ ps4debug.js
  Restore.js
  todex.js
  utils.js
+ webrte.js
  ../DRC.jpg
  ../pages.css
  ../Style.css
